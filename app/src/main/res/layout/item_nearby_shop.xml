@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zh_shop"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_overlay">
+
+            <TextView
+                android:id="@+id/shop_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:drawableLeft="@drawable/location_icon"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="600米"
+                android:textColor="@color/color_light_white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/shop_distance"
+                android:drawableLeft="@drawable/like_icon2"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="200"
+                android:textColor="@color/color_light_white"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/collection_icon"/>
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shop_bg"
+            android:gravity="center"
+            android:text="XXXXXX"
+            android:textColor="@color/color_light_white"
+            android:textSize="18sp"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

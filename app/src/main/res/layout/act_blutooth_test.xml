@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/check_permission"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="检测权限"
+            android:textSize="14sp"/>
+        <Button
+            android:id="@+id/jumpsetting"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="去设置页面"
+            android:textSize="14sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/choose_uuid"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/secure"
+                android:layout_height="wrap_content"
+                android:text="使用要认证的UUID"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/insecure"
+                android:layout_height="wrap_content"
+                android:text="使用不需要认证的UUID"/>
+
+
+        </RadioGroup>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <Button
+                android:id="@+id/open_bluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="打开蓝牙"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/close_bluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/open_bluetooth"
+                android:text="关闭蓝牙"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/client_aibao_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@id/open_bluetooth"
+                android:layout_margin="5dp"
+                android:text="连接AibaoWIFI"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/client_rns_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@id/open_bluetooth"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/client_aibao_wifi"
+                android:text="连接RNSWIFI"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_margin="8dp">
+
+            <Button
+                android:id="@+id/scan_bluetooth_list"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="搜索列表"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/scan_bt_show_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/scan_bluetooth_list"
+                android:gravity="center"
+                android:text="蓝牙搜索状态"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bluetooth_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/scan_bluetooth_list"
+                app:layoutManager="LinearLayoutManager">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="130dp"
+              android:orientation="vertical"
+              android:paddingBottom="4dp"
+              android:paddingLeft="12dp"
+              android:paddingRight="12dp"
+              android:paddingTop="4dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:id="@+id/order_status"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:lines="1"
+            android:text="待取货"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/order_pic"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zh_commodity_2"/>
+
+        <TextView
+            android:id="@+id/order_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/order_pic"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@id/order_status"
+            android:layout_toRightOf="@id/order_pic"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="秋冬季时尚女装"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/order_detail_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_title"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/order_status"
+            android:layout_toRightOf="@id/order_pic"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="秋冬季时尚女季时尚冬季时尚女装"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/order_pic"
+            android:layout_toLeftOf="@id/order_status"
+            android:gravity="right"
+            android:minHeight="20dp"
+            android:text="$233"
+            android:textColor="@color/orange800"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/order_pic"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/order_pic"
+            android:drawableLeft="@drawable/distance_icon"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:minHeight="20dp"
+            android:text="秋冬季时尚女季时尚冬季时尚女装"
+            android:textSize="12sp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

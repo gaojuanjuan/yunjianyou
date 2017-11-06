@@ -1,0 +1,184 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="editTextStyle">@style/AppTheme.EditText</item>
+        <item name="buttonStyle">@style/AppTheme.Button</item>
+        <item name="toolbarNavigationButtonStyle">@style/AppTheme.Navigation</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AppTheme.PositiveButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AppTheme.NegativeButton</item>
+    </style>
+
+    <style name="AppTheme_jianyou" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/grey400</item>
+        <item name="colorPrimaryDark">@color/grey400</item>
+        <item name="colorAccent">@color/textColorPrimary</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="editTextStyle">@style/AppTheme.EditText</item>
+        <item name="buttonStyle">@style/AppTheme.Button</item>
+
+    </style>
+
+<!-- android:layout_width="0dp"
+            android:button="@null"
+            android:paddingTop="5dp"
+            android:drawableTop="@drawable/main_bottom_home_selector"
+            android:layout_gravity="center"
+            android:gravity="center"
+             android:textSize="14sp"
+            android:layout_height="match_parent"
+             android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@drawable/main_bottom_text_selector"
+            android:layout_weight="1"-->
+
+    <style name="bottom_radiobutton_style">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@drawable/main_bottom_text_selector</item>
+
+    </style>
+
+<!-- <item name="android:windowBackground">@android:color/transparent</item>-->
+
+    <style name="splash_activity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog.MinWidth">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- toolbar标题样式 -->
+    <style name="AppTheme.ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="AppTheme.ToolbarSubtitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="AppTheme.EditText" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/input_bg</item>
+        <item name="android:minHeight">@dimen/height</item>
+    </style>
+
+    <style name="AppTheme.PositiveButton" parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/button_pressed_color</item>
+    </style>
+
+    <style name="AppTheme.NegativeButton" parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:minHeight">@dimen/height</item>
+    </style>
+
+    <style name="AppTheme.Navigation" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="AppTheme.Button.Yellow" parent="@style/AppTheme.Button">
+        <item name="android:background">@drawable/button_yellow_bg</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="ListText">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">@dimen/dp20</item>
+        <item name="android:paddingTop">@dimen/dp15</item>
+        <item name="android:paddingBottom">@dimen/dp15</item>
+    </style>
+
+    <style name="ListText.Hint" parent="ListText">
+        <item name="android:textColor">@color/button_pressed_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingRight">@dimen/dp20</item>
+    </style>
+
+
+    <style name="button_grey_white" parent="Widget.AppCompat.Button">
+        <item name="android:background">#656565</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="alert_theme" parent="Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@drawable/abc_dialog_material_background_grey</item>
+        <item name="android:textColor">#dbdbdb</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+        <item name="android:textColorPrimary">?android:attr/colorAccent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="alert_theme_grey800" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/abc_dialog_material_background_grey</item>
+        <item name="android:textColor">#dbdbdb</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+        <item name="android:textColorPrimary">?android:attr/colorAccent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+
+    <style name="mToast_Animation_Translucent">
+        <item name="android:windowEnterAnimation">@anim/mtoast_top_translucent_enter</item>
+        <item name="android:windowExitAnimation">@anim/mtoast_top_translucent_exit</item>
+    </style>
+
+
+</resources>

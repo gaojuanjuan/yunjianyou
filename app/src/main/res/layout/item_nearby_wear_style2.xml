@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/wear_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/men_wear"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/wear_icon"
+            android:layout_marginLeft="20dp"
+            android:gravity="center|left"
+            android:text="XXXXXWEAR\nX装"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="22sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@id/wear_icon"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/next_v1"
+            android:background="@drawable/next_bg"
+
+            android:paddingRight="14dp"
+            android:text="点击进入"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#e3e3e3"
+              android:clipChildren="false"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_light_white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@color/titleTextColor"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:clipChildren="false">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/textColorPrimary"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_pic"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_brightness_1_white_24dp"
+            android:padding="17dp"
+            android:src="@drawable/zh_shop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/user_pic"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/user_pic"
+            android:drawableLeft="@drawable/vip_icon"
+            android:drawablePadding="4dp"
+            android:text="用户123"
+            android:textColor="@color/orange600"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/ic_keyboard_arrow_right_white_24dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:padding="2dp">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/shirt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="会员"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/collection"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:padding="2dp">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/shirt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="我的收藏"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:padding="2dp">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/shirt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="优惠券"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:padding="2dp">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/shirt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="积分"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableRight="@drawable/next_v2"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="我的消费"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableRight="@drawable/next_v2"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="我的足迹"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/feedback"
+            android:drawableRight="@drawable/next_v2"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="帮助与反馈"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableRight="@drawable/next_v2"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="关于我们"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="客服电话：400-xxx-xxxx"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

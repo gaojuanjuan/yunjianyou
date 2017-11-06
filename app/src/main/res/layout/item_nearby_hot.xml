@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:padding="2dp">
+
+        <RelativeLayout
+            android:id="@+id/commodity_info_new3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:padding="2dp">
+
+
+            <TextView
+                android:id="@+id/commodity_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="女装 宽松休闲外套"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commodity_name"
+                android:layout_centerHorizontal="true"
+                android:text="$199"
+                android:textColor="@color/red800"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/new_commodity3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/commodity_info_new3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zh_commodity_3"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

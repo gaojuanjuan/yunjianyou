@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#e3e3e3"
+              android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/color_light_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="简优名品"
+                    android:textColor="@color/titleTextColor"
+                    android:textSize="20dp"/>
+
+
+                <ImageView
+                    android:id="@+id/search_iv"
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:src="@drawable/search_icon"/>
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:id="@+id/home_location_icon"
+                        android:layout_width="15dp"
+                        android:layout_height="18dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/location_icon"/>
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/home_location_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="北京北京北京"
+                        android:textSize="10sp"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <com.youth.banner.Banner
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/color_light_white">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:padding="2dp">
+
+                        <ImageView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/shirt"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="折扣"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:padding="2dp">
+
+                        <ImageView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/shirt"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="拼团"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:padding="2dp">
+
+                        <ImageView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/shirt"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="分类"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:padding="2dp">
+
+                        <ImageView
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/shirt"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="点评"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--热门推荐-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/color_light_white"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/hot_icon"
+                        android:drawablePadding="4dp"
+                        android:gravity="center"
+
+                        android:text="热门推荐"
+                        android:textColor="@color/titleTextColor"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/refresh_icon"
+                        android:drawablePadding="4dp"
+                        android:gravity="center"
+                        android:text="换一批"
+                        android:textColor="@color/grey500"
+                        android:textSize="12sp"/>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/commodity_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:padding="2dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="女装 宽松休闲外套"
+                                android:textColor="@color/textColorPrimary"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="$199"
+                                android:textColor="@color/red800"
+                                android:textSize="12sp"/>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/hot_commodity"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_above="@id/commodity_info"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/zh_commodity_3"/>
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="40dp"
+                            android:background="@color/black_overlay"
+                            android:drawableLeft="@drawable/shop"
+                            android:drawablePadding="-20dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="优衣库"
+                            android:textColor="@color/color_light_white"
+                            android:textSize="12sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp">
+
+                        <RelativeLayout
+                            android:id="@+id/commodity_info2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:padding="2dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="女装 宽松休闲外套"
+                                android:textColor="@color/textColorPrimary"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="$199"
+                                android:textColor="@color/red800"
+                                android:textSize="12sp"/>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/hot_commodity2"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_above="@id/commodity_info2"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/zh_commodity"/>
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="40dp"
+                            android:background="@color/black_overlay"
+                            android:drawableLeft="@drawable/shop"
+                            android:drawablePadding="-20dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="优衣库"
+                            android:textColor="@color/color_light_white"
+                            android:textSize="12sp"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/zh_shop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/black_overlay"
+                        android:gravity="center"
+                        android:text="精品店铺"
+                        android:textColor="@color/color_light_white"
+                        android:textSize="18sp"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginTop="14dp"
+                        android:src="@drawable/collection_icon"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <!--折扣-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/color_light_white"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/flag_1"
+                        android:drawablePadding="4dp"
+                        android:gravity="center"
+                        android:text="折扣品牌"
+                        android:textColor="@color/titleTextColor"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="4dp"
+                        android:drawableRight="@drawable/next_v1"
+                        android:gravity="center"
+                        android:text="更多"
+                        android:textColor="@color/titleTextColor"
+                        android:textSize="12sp"/>
+
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/discount_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+            <!--新品推荐-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/color_light_white"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/new_icon"
+                        android:drawablePadding="4dp"
+                        android:gravity="center"
+                        android:text="新品推荐"
+                        android:textColor="@color/titleTextColor"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="4dp"
+                        android:drawableRight="@drawable/next_v1"
+                        android:gravity="center"
+                        android:text="更多"
+                        android:textColor="@color/titleTextColor"
+                        android:textSize="12sp"/>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:padding="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/commodity_info_new"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:padding="2dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="女装 宽松休闲外套"
+                                android:textColor="@color/textColorPrimary"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="$199"
+                                android:textColor="@color/red800"
+                                android:textSize="12sp"/>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/new_commodity"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_above="@id/commodity_info_new"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/zh_commodity_3"/>
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="40dp"
+                            android:background="@color/black_overlay"
+                            android:drawableLeft="@drawable/shop"
+                            android:drawablePadding="-20dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="优衣库"
+                            android:textColor="@color/color_light_white"
+                            android:textSize="12sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:padding="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/commodity_info_new2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:padding="2dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="女装 宽松休闲外套"
+                                android:textColor="@color/textColorPrimary"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="$199"
+                                android:textColor="@color/red800"
+                                android:textSize="12sp"/>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/new_commodity2"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_above="@id/commodity_info_new2"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/zh_commodity"/>
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="40dp"
+                            android:background="@color/black_overlay"
+                            android:drawableLeft="@drawable/shop"
+                            android:drawablePadding="-20dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="优衣库"
+                            android:textColor="@color/color_light_white"
+                            android:textSize="12sp"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:padding="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/commodity_info_new3"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:padding="2dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="女装 宽松休闲外套"
+                                android:textColor="@color/textColorPrimary"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="$199"
+                                android:textColor="@color/red800"
+                                android:textSize="12sp"/>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/new_commodity3"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_above="@id/commodity_info_new3"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/zh_commodity_3"/>
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="40dp"
+                            android:background="@color/black_overlay"
+                            android:drawableLeft="@drawable/shop"
+                            android:drawablePadding="-20dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="优衣库"
+                            android:textColor="@color/color_light_white"
+                            android:textSize="12sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:padding="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/commodity_info_new4"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:padding="2dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="女装 宽松休闲外套"
+                                android:textColor="@color/textColorPrimary"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="$199"
+                                android:textColor="@color/red800"
+                                android:textSize="12sp"/>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/new_commodity4"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_above="@id/commodity_info_new4"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/zh_commodity"/>
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="40dp"
+                            android:background="@color/black_overlay"
+                            android:drawableLeft="@drawable/shop"
+                            android:drawablePadding="-20dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="优衣库"
+                            android:textColor="@color/color_light_white"
+                            android:textSize="12sp"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--c猜你喜欢-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/color_light_white"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableLeft="@drawable/u_like_icon"
+                        android:drawablePadding="4dp"
+                        android:gravity="center"
+                        android:text="猜你喜欢"
+                        android:textColor="@color/titleTextColor"
+                        android:textSize="16sp"/>
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:padding="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/commodity_info_ulike"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:padding="2dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="女装 宽松休闲外套"
+                                android:textColor="@color/textColorPrimary"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="$199"
+                                android:textColor="@color/red800"
+                                android:textSize="12sp"/>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/ulike_commodity"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_above="@id/commodity_info_ulike"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/zh_commodity_3"/>
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="40dp"
+                            android:background="@color/black_overlay"
+                            android:drawableLeft="@drawable/shop"
+                            android:drawablePadding="-20dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="优衣库"
+                            android:textColor="@color/color_light_white"
+                            android:textSize="12sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:padding="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/commodity_info_ulike2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:padding="2dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="女装 宽松休闲外套"
+                                android:textColor="@color/textColorPrimary"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="$199"
+                                android:textColor="@color/red800"
+                                android:textSize="12sp"/>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/ulike_commodity2"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_above="@id/commodity_info_ulike2"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/zh_commodity"/>
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="40dp"
+                            android:background="@color/black_overlay"
+                            android:drawableLeft="@drawable/shop"
+                            android:drawablePadding="-20dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="优衣库"
+                            android:textColor="@color/color_light_white"
+                            android:textSize="12sp"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:padding="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/commodity_info_ulike3"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:padding="2dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="女装 宽松休闲外套"
+                                android:textColor="@color/textColorPrimary"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="$199"
+                                android:textColor="@color/red800"
+                                android:textSize="12sp"/>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/ulike_commodity3"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_above="@id/commodity_info_ulike3"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/zh_commodity_3"/>
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="40dp"
+                            android:background="@color/black_overlay"
+                            android:drawableLeft="@drawable/shop"
+                            android:drawablePadding="-20dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="优衣库"
+                            android:textColor="@color/color_light_white"
+                            android:textSize="12sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:padding="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/commodity_info_ulike4"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:padding="2dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="女装 宽松休闲外套"
+                                android:textColor="@color/textColorPrimary"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="$199"
+                                android:textColor="@color/red800"
+                                android:textSize="12sp"/>
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/ulike_commodity4"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_above="@id/commodity_info_ulike4"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/zh_commodity"/>
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="40dp"
+                            android:background="@color/black_overlay"
+                            android:drawableLeft="@drawable/shop"
+                            android:drawablePadding="-20dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="优衣库"
+                            android:textColor="@color/color_light_white"
+                            android:textSize="12sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
