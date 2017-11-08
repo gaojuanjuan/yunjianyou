@@ -16,6 +16,9 @@
     <dimen name="dp30">30dp</dimen>
     <dimen name="dp25">25dp</dimen>
 
+    <dimen name="login_margin_">45dp</dimen>
+
+
     <integer name="anitime">150</integer>
 
 </resources>

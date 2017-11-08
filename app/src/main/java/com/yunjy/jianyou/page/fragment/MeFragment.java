@@ -11,6 +11,7 @@ import com.yunjy.jianyou.R;
 import com.yunjy.jianyou.base.BaseFragment;
 import com.yunjy.jianyou.page.act.CollectionAct;
 import com.yunjy.jianyou.page.act.FeedbackAct;
+import com.yunjy.jianyou.page.act.ShopDetailActivity;
 
 /**
  * Created by zt on 2017/10/18.
@@ -37,6 +38,16 @@ public class MeFragment extends BaseFragment {
                 startActivity(new Intent(getActivity(), CollectionAct.class));
             }
         });
+
+        iview.findViewById(R.id.feedback).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), ShopDetailActivity.class));
+            }
+        });
+
+
+
         return iview;
     }
 
