@@ -11,7 +11,7 @@ import org.apache.log4j.Logger;
  * Created by zt on 2017/6/27.
  */
 
-public class LogUtils {
+public class LogUtil {
 
     private static boolean islog4j = false;
 

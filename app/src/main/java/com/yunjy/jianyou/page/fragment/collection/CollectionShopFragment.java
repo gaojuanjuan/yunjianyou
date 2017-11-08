@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.yunjy.jianyou.R;
 import com.yunjy.jianyou.base.LazyBaseFragment;
-import com.yunjy.jianyou.tools.LogUtils;
+import com.yunjy.jianyou.tools.LogUtil;
 
 import java.util.Random;
 
@@ -58,7 +58,7 @@ public class CollectionShopFragment extends LazyBaseFragment  implements SwipeRe
         cs_list_rv = (RecyclerView) inflate.findViewById(R.id.cs_list_rv);
 
         cs_list_rv.setAdapter(madapter);
-        LogUtils.i(TAG, "onCreateView() called  ");
+        LogUtil.i(TAG, "onCreateView() called  ");
         return inflate;
 
     }
@@ -73,7 +73,7 @@ public class CollectionShopFragment extends LazyBaseFragment  implements SwipeRe
         cs_swipe_refresh.setRefreshing(true);
 
         Random random = new Random();
-        LogUtils.i(TAG, "---   is onRefresh  ");
+        LogUtil.i(TAG, "---   is onRefresh  ");
         size = random.nextInt(15);
         madapter.notifyDataSetChanged();
         //refresh data

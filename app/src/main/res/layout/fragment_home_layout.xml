@@ -69,11 +69,13 @@
                 </RelativeLayout>
             </RelativeLayout>
 
-            <com.youth.banner.Banner
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/banner"
+
+            <fragment
                 android:layout_width="match_parent"
-                android:layout_height="130dp"/>
+                android:id="@+id/homepage_BannerFragment"
+                android:name="com.yunjy.jianyou.page.fragment.homepage.BannerFragment"
+                android:layout_height="130dp"
+                />
 
             <RelativeLayout
                 android:layout_width="match_parent"

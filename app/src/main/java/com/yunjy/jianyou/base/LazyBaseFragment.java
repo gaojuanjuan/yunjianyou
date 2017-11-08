@@ -45,4 +45,6 @@ public abstract class LazyBaseFragment extends Fragment {
         super.onDestroyView();
 
     }
+
+
 }

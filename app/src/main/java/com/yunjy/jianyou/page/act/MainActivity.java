@@ -2,27 +2,17 @@ package com.yunjy.jianyou.page.act;
 
 import android.os.Bundle;
 import android.support.annotation.IdRes;
-import android.support.annotation.NonNull;
-import android.support.design.internal.BottomNavigationItemView;
-import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
-import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.yunjy.jianyou.R;
 import com.yunjy.jianyou.page.fragment.HomeFragment;
 import com.yunjy.jianyou.page.fragment.MeFragment;
 import com.yunjy.jianyou.page.fragment.NearbyFragment;
 import com.yunjy.jianyou.page.fragment.OrderFragment;
-import com.yunjy.jianyou.tools.LogUtils;
 
 import java.util.ArrayList;
 import java.util.List;

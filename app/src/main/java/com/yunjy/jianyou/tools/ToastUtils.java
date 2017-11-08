@@ -41,7 +41,7 @@ public class ToastUtils {
             mToast.setGravity(Gravity.FILL_HORIZONTAL| Gravity.TOP,0,0);
         } catch (Exception e) {
             e.printStackTrace();
-            LogUtils.e(e);
+            LogUtil.e(e);
         } finally {
             return mToast;
         }

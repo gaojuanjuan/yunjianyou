@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.yunjy.jianyou.ConfigGlobal;
 import com.yunjy.jianyou.R;
-import com.yunjy.jianyou.tools.LogUtils;
+import com.yunjy.jianyou.tools.LogUtil;
 import com.yunjy.jianyou.tools.ToastUtils;
 
 import org.greenrobot.eventbus.EventBus;
@@ -149,7 +149,7 @@ public class AppActivityManager {
         if (mCurrentActivity != null) {
             mCurrentActivity.startActivity(intent);
         } else {
-            LogUtils.warn(" eventbus startActivity .. mCurrent is null NEW_TASK startActivity");
+            LogUtil.warn(" eventbus startActivity .. mCurrent is null NEW_TASK startActivity");
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             mApplication.startActivity(intent);
         }
@@ -209,7 +209,7 @@ public class AppActivityManager {
 
     public void exit() {
         try {
-            LogUtils.warn(ConfigGlobal.pack_Name+" exit...");
+            LogUtil.warn(ConfigGlobal.pack_Name+" exit...");
             EventBus.getDefault().unregister(this);
             closeAll();
             ActivityManager ActivityManager = (android.app.ActivityManager) mApplication.getSystemService(Context.ACTIVITY_SERVICE);

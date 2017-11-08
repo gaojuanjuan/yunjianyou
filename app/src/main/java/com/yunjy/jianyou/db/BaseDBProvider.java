@@ -13,7 +13,7 @@ import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.support.DatabaseConnection;
 import com.j256.ormlite.table.TableUtils;
 import com.yunjy.jianyou.ConfigGlobal;
-import com.yunjy.jianyou.tools.LogUtils;
+import com.yunjy.jianyou.tools.LogUtil;
 
 import java.lang.reflect.Field;
 import java.sql.SQLException;
@@ -53,7 +53,7 @@ public abstract class BaseDBProvider<T> {
                     String s = annotation.columnName();
                     if(!hasColumn(columnNames,s)){
                         if(!TextUtils.isEmpty(s)){
-                            LogUtils.i("rns_DB"," alter table "+getTableName()+" add "+s+" "+getDataType(field));
+                            LogUtil.i("rns_DB"," alter table "+getTableName()+" add "+s+" "+getDataType(field));
                             dao.executeRawNoArgs("ALTER TABLE "+getTableName()+" ADD "+s+" "+getDataType(field));
                         }
                     }

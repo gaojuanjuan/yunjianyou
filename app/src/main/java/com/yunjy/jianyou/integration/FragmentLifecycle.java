@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
 
-import com.yunjy.jianyou.tools.LogUtils;
+import com.yunjy.jianyou.tools.LogUtil;
 
 /**
  * Created by zt on 2017/9/18.
@@ -23,20 +23,20 @@ public class FragmentLifecycle extends FragmentManager.FragmentLifecycleCallback
     @Override
     public void onFragmentAttached(FragmentManager fm, Fragment f, Context context) {
         super.onFragmentAttached(fm, f, context);
-        LogUtils.i(f.toString()," onFragmentAttached .. ");
+        LogUtil.i(f.toString()," onFragmentAttached .. ");
 
     }
 
     @Override
     public void onFragmentCreated(FragmentManager fm, Fragment f, Bundle savedInstanceState) {
         super.onFragmentCreated(fm, f, savedInstanceState);
-        LogUtils.i(f.toString()," onFragmentCreated .. ");
+        LogUtil.i(f.toString()," onFragmentCreated .. ");
     }
 
     @Override
     public void onFragmentActivityCreated(FragmentManager fm, Fragment f, Bundle savedInstanceState) {
         super.onFragmentActivityCreated(fm, f, savedInstanceState);
-        LogUtils.i(f.toString()," onFragmentActivityCreated .. ");
+        LogUtil.i(f.toString()," onFragmentActivityCreated .. ");
 
 
     }
@@ -44,34 +44,34 @@ public class FragmentLifecycle extends FragmentManager.FragmentLifecycleCallback
     @Override
     public void onFragmentViewCreated(FragmentManager fm, Fragment f, View v, Bundle savedInstanceState) {
         super.onFragmentViewCreated(fm, f, v, savedInstanceState);
-        LogUtils.i(f.toString()," onFragmentViewCreated .. ");
+        LogUtil.i(f.toString()," onFragmentViewCreated .. ");
     }
 
     @Override
     public void onFragmentStarted(FragmentManager fm, Fragment f) {
         super.onFragmentStarted(fm, f);
-        LogUtils.i(f.toString()," onFragmentStarted .. ");
+        LogUtil.i(f.toString()," onFragmentStarted .. ");
     }
 
     @Override
     public void onFragmentResumed(FragmentManager fm, Fragment f) {
         super.onFragmentResumed(fm, f);
 
-        LogUtils.i(f.toString()," onFragmentResumed .. ");
+        LogUtil.i(f.toString()," onFragmentResumed .. ");
 
     }
 
     @Override
     public void onFragmentPaused(FragmentManager fm, Fragment f) {
         super.onFragmentPaused(fm, f);
-        LogUtils.i(f.toString()," onFragmentPaused .. ");
+        LogUtil.i(f.toString()," onFragmentPaused .. ");
     }
 
     @Override
     public void onFragmentStopped(FragmentManager fm, Fragment f) {
         super.onFragmentStopped(fm, f);
 
-        LogUtils.i(f.toString()," onFragmentStopped .. ");
+        LogUtil.i(f.toString()," onFragmentStopped .. ");
 
     }
 
@@ -79,20 +79,20 @@ public class FragmentLifecycle extends FragmentManager.FragmentLifecycleCallback
     public void onFragmentSaveInstanceState(FragmentManager fm, Fragment f, Bundle outState) {
         super.onFragmentSaveInstanceState(fm, f, outState);
 
-        LogUtils.i(f.toString()," onFragmentSaveInstanceState .. ");
+        LogUtil.i(f.toString()," onFragmentSaveInstanceState .. ");
 
     }
 
     @Override
     public void onFragmentViewDestroyed(FragmentManager fm, Fragment f) {
         super.onFragmentViewDestroyed(fm, f);
-        LogUtils.i(f.toString()," onFragmentViewDestroyed .. ");
+        LogUtil.i(f.toString()," onFragmentViewDestroyed .. ");
     }
 
     @Override
     public void onFragmentDestroyed(FragmentManager fm, Fragment f) {
         super.onFragmentDestroyed(fm, f);
-        LogUtils.i(f.toString()," onFragmentDestroyed .. ");
+        LogUtil.i(f.toString()," onFragmentDestroyed .. ");
     }
 
     @Override

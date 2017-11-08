@@ -8,7 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 
 import com.yunjy.jianyou.base.IActivity;
-import com.yunjy.jianyou.tools.LogUtils;
+import com.yunjy.jianyou.tools.LogUtil;
 
 
 /**
@@ -32,7 +32,7 @@ public class ActivityLifecycle implements Application.ActivityLifecycleCallbacks
     @CallSuper
     public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
 
-        LogUtils.i(activity.toString()," onActivityCreated .. ");
+        LogUtil.i(activity.toString()," onActivityCreated .. ");
         boolean booleanExtra = activity.getIntent().getBooleanExtra(AppActivityManager.IS_NOT_ADD_ACTIVITYLIST, false);
 
         if(!booleanExtra){
@@ -55,14 +55,14 @@ public class ActivityLifecycle implements Application.ActivityLifecycleCallbacks
     @Override
     @CallSuper
     public void onActivityResumed(Activity activity) {
-        LogUtils.i(activity.toString()," onActivityResumed .. ");
+        LogUtil.i(activity.toString()," onActivityResumed .. ");
 
     }
 
     @Override
     @CallSuper
     public void onActivityPaused(Activity activity) {
-        LogUtils.i(activity.toString()," onActivityPaused .. ");
+        LogUtil.i(activity.toString()," onActivityPaused .. ");
     }
 
     @Override
@@ -80,7 +80,7 @@ public class ActivityLifecycle implements Application.ActivityLifecycleCallbacks
     @Override
     @CallSuper
     public void onActivityDestroyed(Activity activity) {
-        LogUtils.i(activity.toString()," onActivityDestroyed .. ActivityList Remove this Activity ");
+        LogUtil.i(activity.toString()," onActivityDestroyed .. ActivityList Remove this Activity ");
         am.removeActivity(activity);
     }
 

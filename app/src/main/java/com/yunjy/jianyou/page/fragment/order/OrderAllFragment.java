@@ -6,15 +6,13 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.yunjy.jianyou.R;
-import com.yunjy.jianyou.base.BaseFragment;
 import com.yunjy.jianyou.base.LazyBaseFragment;
-import com.yunjy.jianyou.tools.LogUtils;
+import com.yunjy.jianyou.tools.LogUtil;
 
 import java.util.Random;
 
@@ -74,7 +72,7 @@ public class OrderAllFragment extends LazyBaseFragment implements SwipeRefreshLa
         order_list_rv = (RecyclerView) inflate.findViewById(R.id.order_list_rv);
 
         order_list_rv.setAdapter(madapter);
-        LogUtils.i(TAG, "onCreateView() called  ");
+        LogUtil.i(TAG, "onCreateView() called  ");
         return inflate;
     }
 
@@ -89,7 +87,7 @@ public class OrderAllFragment extends LazyBaseFragment implements SwipeRefreshLa
         order_swipe_refresh.setRefreshing(true);
 
         Random random = new Random();
-        LogUtils.i(TAG, "---   is onRefresh  ");
+        LogUtil.i(TAG, "---   is onRefresh  ");
         size = random.nextInt(15);
         madapter.notifyDataSetChanged();
         //refresh data

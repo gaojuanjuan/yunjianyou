@@ -9,9 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.yunjy.jianyou.tools.LogUtils;
-
-import java.util.logging.LogManager;
+import com.yunjy.jianyou.tools.LogUtil;
 
 /**
  * Created by zt on 2017/9/18.
@@ -40,7 +38,7 @@ public class BaseFragment extends Fragment {
 
     @Override
     public void onHiddenChanged(boolean hidden) {
-        LogUtils.i(TAG, getClass().getSimpleName() + " onHiddenChanged() called with: hidden = [" + hidden + "]");
+        LogUtil.i(TAG, getClass().getSimpleName() + " onHiddenChanged() called with: hidden = [" + hidden + "]");
         super.onHiddenChanged(hidden);
     }
 
@@ -76,39 +74,39 @@ public class BaseFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        LogUtils.i(TAG, getClass().getSimpleName() +  "onStart() called");
+        LogUtil.i(TAG, getClass().getSimpleName() +  "onStart() called");
     }
 
 
     @Override
     public void onResume() {
         super.onResume();
-        LogUtils.i(TAG, getClass().getSimpleName() +  "onResume() called");
+        LogUtil.i(TAG, getClass().getSimpleName() +  "onResume() called");
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        LogUtils.i(TAG, getClass().getSimpleName() + "onPause() called");
+        LogUtil.i(TAG, getClass().getSimpleName() + "onPause() called");
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        LogUtils.i(TAG, getClass().getSimpleName() +  "onStop() called");
+        LogUtil.i(TAG, getClass().getSimpleName() +  "onStop() called");
     }
 
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        LogUtils.i(TAG, getClass().getSimpleName() +  "onDestroyView() called");
+        LogUtil.i(TAG, getClass().getSimpleName() +  "onDestroyView() called");
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        LogUtils.i(TAG, getClass().getSimpleName() +  "onDestroy() called");
+        LogUtil.i(TAG, getClass().getSimpleName() +  "onDestroy() called");
     }
 
 
