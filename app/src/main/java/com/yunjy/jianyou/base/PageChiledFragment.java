@@ -43,7 +43,20 @@ public abstract class PageChiledFragment extends BaseFragment {
         content_rl_ = (RelativeLayout) mRootView.findViewById(R.id.content_rl_);
         load_rl_ = (RelativeLayout) mRootView.findViewById(R.id.load_rl_);
 
+        err_tv_.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                reLoad();
+            }
+        });
+
+
         return mRootView;
+    }
+
+
+    public void reLoad(){
+
     }
 
 
@@ -98,6 +111,9 @@ public abstract class PageChiledFragment extends BaseFragment {
             load_rl_.setVisibility(View.VISIBLE);
         }
     }
+
+
+
 
 
     public void showErr() {

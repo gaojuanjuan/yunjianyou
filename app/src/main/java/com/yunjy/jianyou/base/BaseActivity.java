@@ -15,7 +15,7 @@ public abstract  class BaseActivity extends AppCompatActivity  implements IActiv
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getViewID());
-        initdata();
+        init();
     }
 
 

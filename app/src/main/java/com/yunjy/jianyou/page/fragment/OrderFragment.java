@@ -14,6 +14,7 @@ import android.widget.TableLayout;
 import com.yunjy.jianyou.R;
 import com.yunjy.jianyou.base.BaseFragment;
 import com.yunjy.jianyou.page.fragment.order.OrderAllFragment;
+import com.yunjy.jianyou.page.fragment.order.OrderStatusEnum;
 
 import java.util.ArrayList;
 
@@ -41,11 +42,11 @@ public class OrderFragment extends BaseFragment {
         orderStatus.add("已取货");
         orderStatus.add("待评价");
         orderStatus.add("退款/售后");
-        fragments.add(new OrderAllFragment());
-        fragments.add(new OrderAllFragment());
-        fragments.add(new OrderAllFragment());
-        fragments.add(new OrderAllFragment());
-        fragments.add(new OrderAllFragment());
+        fragments.add(new OrderAllFragment(OrderStatusEnum.all.orderStatus));
+        fragments.add(new OrderAllFragment(OrderStatusEnum.unreceive.orderStatus));
+        fragments.add(new OrderAllFragment(OrderStatusEnum.receive.orderStatus));
+        fragments.add(new OrderAllFragment(OrderStatusEnum.evaluate.orderStatus));
+        fragments.add(new OrderAllFragment(OrderStatusEnum.afterSale.orderStatus));
         order_tab.setTabMode(TabLayout.MODE_SCROLLABLE);
         FragmentPagerAdapter mFragmentPagerAdapter = new FragmentPagerAdapter(getActivity().getSupportFragmentManager()) {
             @Override

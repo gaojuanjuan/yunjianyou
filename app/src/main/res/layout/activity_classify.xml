@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yunjy.jianyou.page.act.ClassifyActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/classify_base"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="24%"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/classify_base"
+        android:paddingLeft="5dp"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/classify_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,5 +1,6 @@
 package com.yunjy.jianyou.page.act;
 
+import com.yunjy.jianyou.R;
 import com.yunjy.jianyou.base.BaseActivity;
 
 /**
@@ -14,11 +15,11 @@ public class WebViewAct extends BaseActivity {
 
     @Override
     public int getViewID() {
-        return 0;
+        return R.layout.act_webview_;
     }
 
     @Override
-    public void initdata() {
+    public void init() {
 
     }
 }

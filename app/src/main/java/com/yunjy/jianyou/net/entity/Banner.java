@@ -9,6 +9,4 @@ import java.util.ArrayList;
 public class Banner extends BaseEntity<ArrayList<BannerInfo>> {
 
 
-
-
 }

@@ -47,6 +47,10 @@
             android:name=".page.act.ShopDetailActivity"
             android:screenOrientation="portrait">
         </activity>
+        <activity android:name=".page.act.SearchActivity">
+        </activity>
+        <activity android:name=".page.act.ClassifyActivity">
+        </activity>
     </application>
 
 </manifest>

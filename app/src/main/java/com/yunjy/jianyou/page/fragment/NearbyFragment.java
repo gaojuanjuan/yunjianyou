@@ -10,8 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.amap.api.location.AMapLocation;
 import com.yunjy.jianyou.R;
 import com.yunjy.jianyou.base.BaseFragment;
+import com.yunjy.jianyou.page.act.MainActivity;
 import com.yunjy.jianyou.page.fragment.nearby.NearbyHotFragment;
 import com.yunjy.jianyou.page.fragment.nearby.NearbyShopFragment;
 import com.yunjy.jianyou.page.fragment.nearby.NearbyWearFragment;
@@ -22,7 +24,9 @@ import java.util.ArrayList;
  * Created by zt on 2017/10/18.
  */
 
-public class NearbyFragment extends BaseFragment {
+public class NearbyFragment
+        extends BaseFragment
+        implements MainActivity.OnLocationListener {
 
     ArrayList<Fragment> fragments = new ArrayList<>();
 
@@ -77,4 +81,8 @@ public class NearbyFragment extends BaseFragment {
     }
 
 
+    @Override
+    public void onLocationChanged(AMapLocation amapLocation) {
+
+    }
 }

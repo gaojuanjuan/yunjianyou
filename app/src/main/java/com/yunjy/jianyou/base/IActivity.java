@@ -14,7 +14,7 @@ public interface IActivity {
 
     int getViewID();
 
-    void initdata();
+    void init();
 
 
 

@@ -45,7 +45,7 @@ public class BannerFragment extends PageChiledFragment implements View.OnClickLi
     @Override
     public void loadData() {
         LogUtil.i(TAG, "loadData() called");
-
+        showLoading();
         OkGo.getInstance().post(URLManager.getUrl(URLManager.mBanner_url))
                 .cacheMode(CacheMode.NO_CACHE)
                 .execute(new mPageChiledFragmetNetCallback() {
@@ -64,6 +64,13 @@ public class BannerFragment extends PageChiledFragment implements View.OnClickLi
                         }
                     }
                 });
+    }
+
+
+    @Override
+    public void reLoad() {
+        super.reLoad();
+        loadData();
     }
 
     Banner banner;
@@ -89,7 +96,7 @@ public class BannerFragment extends PageChiledFragment implements View.OnClickLi
 
             }
         });
-
+        banner.setOffscreenPageLimit(5);
         return inflate;
     }
 

@@ -23,7 +23,7 @@ public class CommodityDetailAct extends BaseActivity {
     }
 
     @Override
-    public void initdata() {
+    public void init() {
 
         findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
             @Override

@@ -21,9 +21,9 @@ public class URLManager {
 
 
     public static String mBanner_url = "/wx/api/get_photo";
+    public static String mhome_op_button_url = "/wx/api/get_submit";
 
-
-
+    public static String get_order = "/wx/api/get_order";
 
 
 }

@@ -20,8 +20,6 @@ import java.util.ArrayList;
 
 public class ShopDetailActivity extends BaseActivity {
 
-
-
     ArrayList<Fragment> fragments = new ArrayList<>();
 
     ArrayList<String> names = new ArrayList<>();
@@ -37,7 +35,7 @@ public class ShopDetailActivity extends BaseActivity {
     }
 
     @Override
-    public void initdata() {
+    public void init() {
         findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

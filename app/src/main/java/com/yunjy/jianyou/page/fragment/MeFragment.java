@@ -42,11 +42,9 @@ public class MeFragment extends BaseFragment {
         iview.findViewById(R.id.feedback).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), ShopDetailActivity.class));
+                startActivity(new Intent(getActivity(), FeedbackAct.class));
             }
         });
-
-
 
         return iview;
     }
