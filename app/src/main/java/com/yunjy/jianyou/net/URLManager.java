@@ -25,5 +25,8 @@ public class URLManager {
 
     public static String get_order = "/wx/api/get_order";
 
+    //登陆功能的url
+    public static final String login_url = "/wx/api/login";
+    public static final String getSmsCode_url = "/wx/api/yzmcode";
 
 }

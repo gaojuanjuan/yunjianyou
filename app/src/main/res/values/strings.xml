@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">简优</string>
+    <string name="again_obtain">重新获取</string>
+    <string name="input_correct_phone">请输入正确的手机号</string>
+    <string name="input_phone">请输入手机号</string>
+    <string name="phone_number">手机号</string>
+    <string name="write_phone">请填写手机号</string>
+    <string name="verification_code">验证码</string>
+    <string name="use_pwd_login">使用密码登录</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="obtain_verification_code">获取验证码</string>
+    <string name="shopping_platform">全网最优的线下购物平台</string>
 
 
 </resources>

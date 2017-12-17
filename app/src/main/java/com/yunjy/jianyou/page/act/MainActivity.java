@@ -1,11 +1,14 @@
 package com.yunjy.jianyou.page.act;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.util.Log;
 import android.widget.RadioGroup;
 
@@ -18,6 +21,10 @@ import com.yunjy.jianyou.page.fragment.HomeFragment;
 import com.yunjy.jianyou.page.fragment.MeFragment;
 import com.yunjy.jianyou.page.fragment.NearbyFragment;
 import com.yunjy.jianyou.page.fragment.OrderFragment;
+import com.yunjy.jianyou.tools.KeyUtils;
+import com.yunjy.jianyou.tools.SPUtils;
+
+import org.apache.log4j.chainsaw.Main;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -48,11 +55,20 @@ public class MainActivity
     public AMapLocationClient mlocationClient;
     //声明mLocationOption对象
     public AMapLocationClientOption mLocationOption = null;
-
+    public static void jump(Activity activity){
+        Intent intent = new Intent(activity, MainActivity.class);
+        activity.startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Object token = SPUtils.get(MainActivity.this, KeyUtils.TOKEN, "");
+        if (token ==null || TextUtils.isEmpty(token.toString())){
+            LoginActivity.jump(MainActivity.this);
+            finish();
+            return;
+        }
 
         main_vp = (ViewPager) findViewById(R.id.main_vp);
         bnv = (RadioGroup) findViewById(R.id.bnv);

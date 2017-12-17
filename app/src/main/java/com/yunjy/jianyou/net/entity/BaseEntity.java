@@ -38,4 +38,12 @@ public class BaseEntity<T>{
     public void setMessage(String message) {
         this.message = message;
     }
+
+    @Override
+    public String toString() {
+        return "BaseEntity{" +
+                "code=" + code +
+                ", message='" + message + '\'' +
+                '}';
+    }
 }
